@@ -1,0 +1,22 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#h_movieGenre, #h_movieReleaseDate, #h_movieType, #h_movieName {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-text-fill: #fff;
+    -fx-border-radius: 30;
+    -fx-border-width: 2px;
+    -fx-border-color: #fff;
+    -jfx-focus-color: white;
+    -jfx-unfocus-color: white;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+}
+
+.combo-box > .list-cell {
+-fx-background: transparent;
+-fx-background-color: transparent;
+-fx-text-fill: white;
+}

@@ -1,0 +1,57 @@
+    /*
+    public boolean checkValueFromDb(String table, String checkAttr, String checkVal) {
+        
+        if(sqlObj.checkDbConnection()) {
+            String checkSQLQuery;
+            
+            try {
+                //step1 load the driver class   
+                Class.forName("oracle.jdbc.driver.OracleDriver");  
+                
+                //step3 create the statement object
+                try ( //step2 create  the connection object
+                      Connection con = DriverManager.getConnection(
+                      dbConnString,dbUsername, dbPassword)) {
+
+
+                    checkSQLQuery = "SELECT COUNT(email) as total FROM USERS WHERE "+checkAttr+"='"+checkVal+"' ";
+
+                    System.out.println(checkSQLQuery);
+
+                    Statement stmt = con.createStatement();
+                    ResultSet resultData = stmt.executeQuery(checkSQLQuery);
+
+                    System.out.println("result: "+resultData.getArray(1));
+
+                }
+
+                
+            } catch (ClassNotFoundException | SQLException e) {
+                System.out.println("Error: "+e.getMessage());
+            }
+        }
+        return true;
+    }
+
+
+    public boolean checkValueFromDb(String table, String checkAttr, String checkVal) {
+        
+        if(sqlObj.checkDbConnection()) {
+            PreparedStatement checkSQL;
+            Connection con = sqlObj.getConnection();
+            
+            try {
+                checkSQL = con.prepareStatement("SELECT COUNT(email) as total FROM USERS WHERE "+checkAttr+"= ?");
+            
+                checkSQL.setString(0, checkVal);
+                ResultSet resultData = checkSQL.executeQuery();
+
+                //System.out.println("result: "+resultData.toString());
+                
+            } catch (Exception e) {
+                System.out.println("Error: "+e.getMessage());
+            }
+        }
+        return true;
+    }
+    */
