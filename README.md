@@ -1,6 +1,6 @@
 # java_projects
-Project: zedflix
-A distributed database video streaming service
+Project: Zedflix
+A distributed database video streaming service made by two young CSE students Ashraful Islam & Shafiur Rahman Chowdhury
 Works with 2 distributed servers currently
 
 To know more about file uploader class:
